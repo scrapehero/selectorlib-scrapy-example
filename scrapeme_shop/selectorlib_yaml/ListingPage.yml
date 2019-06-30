@@ -1,0 +1,7 @@
+product_page:
+    css: a.woocommerce-LoopProduct-link
+    multiple: true
+    type: Link
+next_page:
+    css: a.next
+    type: Link

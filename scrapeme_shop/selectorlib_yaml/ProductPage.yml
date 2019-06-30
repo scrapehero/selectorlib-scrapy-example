@@ -1,0 +1,59 @@
+name:
+    css: h1.product_title
+    type: Text
+image:
+    css: .woocommerce-product-gallery__wrapper img
+    type: Attribute
+    attribute: src
+price:
+    css: 'p.price span.woocommerce-Price-amount'
+    type: Text
+short_description:
+    css: 'div.woocommerce-product-details__short-description p'
+    type: Text
+stock:
+    css: p.stock
+    type: Text
+sku:
+    css: span.sku
+    type: Text
+categories:
+    css: 'span.posted_in a'
+    multiple: true
+    type: Text
+tags:
+    css: 'span.tagged_as a'
+    multiple: true
+    type: Text
+description:
+    css: 'div.woocommerce-Tabs-panel.woocommerce-Tabs-panel--description p'
+    type: Text
+additional_information:
+    css: 'table.shop_attributes tr'
+    multiple: true
+    type: Text
+    children:
+        info:
+            css: th
+            type: Text
+        value:
+            css: td
+            type: Text
+related_products:
+    css: li.product
+    multiple: true
+    type: Text
+    children:
+        name:
+            css: h2.woocommerce-loop-product__title
+            type: Text
+        image:
+            css: img.attachment-woocommerce_thumbnail
+            type: Attribute
+            attribute: src
+        price:
+            css: span.price
+            type: Text
+        url:
+            css: a.woocommerce-LoopProduct-link
+            type: Link
